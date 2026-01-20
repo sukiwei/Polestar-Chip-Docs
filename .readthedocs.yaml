@@ -4,8 +4,12 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.10"
+  # 👇 新增：安装 PDF 生成需要的系统级底层库
+  apt_packages:
+    - libpango-1.0-0
+    - libpangoft2-1.0-0
+    - libharfbuzz-subset0
 
-# 👇 关键是这里：告诉它去安装 requirements.txt 里的东西
 python:
   install:
     - requirements: requirements.txt
