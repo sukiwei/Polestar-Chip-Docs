@@ -5,5 +5,10 @@ build:
   tools:
     python: "3.10"
 
+# 👇 关键是这里：告诉它去安装 requirements.txt 里的东西
+python:
+  install:
+    - requirements: requirements.txt
+
 mkdocs:
   configuration: mkdocs.yml

@@ -1,3 +1,9 @@
 site_name: Polestar Chip Docs
 theme:
   name: readthedocs
+  plugins:
+  - search
+  - with-pdf:
+      author: Sukiwei
+      copyright: Polestar Chip
+      output_path: pdf/doc.pdf
