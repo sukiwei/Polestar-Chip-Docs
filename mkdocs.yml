@@ -11,3 +11,12 @@ plugins:
       author: Sukiwei
       copyright: Polestar Chip
       output_path: datasheet.pdf
+      # 👇 关键修复：防止 Chrome 在服务器上崩溃
+      headless_chrome_options:
+        args:
+          - --no-sandbox
+          - --disable-gpu
+          - --disable-dev-shm-usage
+      # 👇 强制使用我们安装的中文字体
+      render_js: false
+      locale: zh_CN 
