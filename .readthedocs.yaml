@@ -4,13 +4,13 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.10"
-  # 👇 修改了这里：换成了更稳健的系统库组合
   apt_packages:
     - libcairo2
     - libpango-1.0-0
     - libpangocairo-1.0-0
     - libgdk-pixbuf2.0-0
     - shared-mime-info
+    - fonts-noto-cjk  # 👈 关键！加上这个谷歌中文字体包
 
 python:
   install:
