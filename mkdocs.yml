@@ -1,6 +1,3 @@
 site_name: Polestar Chip Docs
 theme:
   name: readthedocs
-
-# 👇 就是这一行！告诉它文章就在当前目录（用 . 表示）
-docs_dir: .
