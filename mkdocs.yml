@@ -1,8 +1,10 @@
 site_name: Polestar Chip Docs
-theme:
-  name: readthedocs
 
-# 👇 这一段非常重要，必须要有！
+# 👇 关键变化：把主题换成了 material
+theme:
+  name: material
+  language: zh  # 让界面变成中文
+
 plugins:
   - search
   - with-pdf:
