@@ -1,9 +1,11 @@
 site_name: Polestar Chip Docs
 theme:
   name: readthedocs
-  plugins:
+
+# 👇 这一段非常重要，必须要有！
+plugins:
   - search
   - with-pdf:
       author: Sukiwei
       copyright: Polestar Chip
-      output_path: datasheet.pdf  # 👈 改成这样，直接放在根目录
+      output_path: datasheet.pdf
