@@ -6,4 +6,4 @@ build:
     python: "3.10"
 
 mkdocs:
-  configuration: mkdocs.yml  # 告诉 RTD 用刚才那个文件来构建
+  configuration: mkdocs.yml
