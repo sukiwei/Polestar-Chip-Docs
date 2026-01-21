@@ -1,0 +1,29 @@
+# mkdocs_zh.yml
+site_name: Polestar Chip Docs (中文)
+docs_dir: docs/zh/                     # 👈 关键：指向中文目录
+site_url: https://polestar-docs.readthedocs.io/zh/latest/
+
+theme:
+  name: material
+  language: zh                         # 👈 网页界面设为中文
+
+nav:
+  - 首页: index.md                     # 👈 菜单保持中文
+  - 硬件指南: hardware/gpio.md         # (示例路径)
+
+plugins:
+  - search
+  - with-pdf:
+      author: Sukiwei
+      copyright: Polestar Chip
+      output_path: datasheet.pdf       # 生成的文件名为 datasheet.pdf
+      
+      # 👇 关键修复保留
+      headless_chrome_options:
+        args:
+          - --no-sandbox
+          - --disable-gpu
+          - --disable-dev-shm-usage
+      
+      render_js: false
+      locale: zh_CN                    # 👈 PDF 内部文字设为中文
