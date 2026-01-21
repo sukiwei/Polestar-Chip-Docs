@@ -14,7 +14,9 @@ build:
 
 python:
   install:
-    - requirements: requirements.txt
+    # 👇 关键修改：加上 ../../
+    - requirements: ../../requirements.txt
 
 mkdocs:
-  configuration: mkdocs_en.yml
+  # 👇 关键修改：加上 ../../
+  configuration: ../../mkdocs_en.yml
