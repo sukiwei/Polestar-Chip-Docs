@@ -6,6 +6,17 @@ site_url: https://polestar-docs.readthedocs.io/zh/latest/
 theme:
   name: material
   language: zh                         # 👈 网页界面设为中文
+  
+extra:
+  alternate:
+    # 当前语言（中文）
+    - name: 中文
+      link: /zh/latest/ 
+      lang: zh
+    # 目标语言（英文）
+    - name: English
+      link: /en/latest/
+      lang: en
 
 nav:
   - 首页: index.md                     # 👈 菜单保持中文
@@ -27,3 +38,4 @@ plugins:
       
       render_js: false
       locale: zh_CN                    # 👈 PDF 内部文字设为中文
+    

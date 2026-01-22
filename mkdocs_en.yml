@@ -7,6 +7,15 @@ theme:
   name: material
   language: en                         # 👈 网页界面设为英文 (Search, Next, Previous)
 
+extra:
+  alternate:
+    - name: English
+      link: /en/latest/
+      lang: en
+    - name: 中文
+      link: /zh/latest/
+      lang: zh
+
 nav:
   - Home: index.md                     # 👈 菜单名必须改成英文！
   - Hardware Guide: hardware/gpio.md   # (示例路径)
