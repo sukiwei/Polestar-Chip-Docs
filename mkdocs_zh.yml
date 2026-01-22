@@ -6,7 +6,7 @@ site_url: https://polestar-docs.readthedocs.io/zh/latest/
 theme:
   name: material
   language: zh                         # 👈 网页界面设为中文
-  
+
 extra:
   alternate:
     # 当前语言（中文）
@@ -20,7 +20,9 @@ extra:
 
 nav:
   - 首页: index.md                     # 👈 菜单保持中文
-  - 硬件指南: hardware/gpio.md         # (示例路径)
+  - Datasheet: datasheet.md         # (示例路径)
+  - SDK: sdk_guide.md        
+
 
 plugins:
   - search
@@ -38,4 +40,12 @@ plugins:
       
       render_js: false
       locale: zh_CN                    # 👈 PDF 内部文字设为中文
-    
+  
+  - encryptcontent: # 核心配置
+      title: "文档受保护" # 输入密码框的标题
+      search_index: false # 禁止被搜索索引（这很重要！）
+      # 下面是全站加密配置，如果你只想加密部分页面，把这行删掉
+      global_password: "smartnvy2026" 
+      decryption_failure_message: "密码错误，请重试！"
+      placeholder: "请输入访问密码..."
+      button_text: "解锁文档"  

@@ -1,2 +1,3 @@
 mkdocs-with-pdf
 mkdocs-material
+mkdocs-encryptcontent-plugin
