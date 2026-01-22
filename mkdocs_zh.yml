@@ -1,51 +1,42 @@
-# mkdocs_zh.yml
 site_name: Polestar Chip Docs (中文)
-docs_dir: docs/zh/                     # 👈 关键：指向中文目录
+docs_dir: docs/zh/
 site_url: https://polestar-docs.readthedocs.io/zh/latest/
 
 theme:
   name: material
-  language: zh                         # 👈 网页界面设为中文
+  language: zh
 
 extra:
   alternate:
-    # 当前语言（中文）
     - name: 中文
-      link: /zh/latest/ 
+      link: /zh/latest/
       lang: zh
-    # 目标语言（英文）
     - name: English
       link: /en/latest/
       lang: en
 
 nav:
-  - 首页: index.md                     # 👈 菜单保持中文
-  - Datasheet: datasheet.md         # (示例路径)
-  - SDK: sdk_guide.md        
-
+  - 首页: index.md
+  - Datasheet: datasheet.md
+  - SDK: sdk_guide.md
 
 plugins:
   - search
   - with-pdf:
       author: Sukiwei
       copyright: Polestar Chip
-      output_path: datasheet.pdf       # 生成的文件名为 datasheet.pdf
-      
-      # 👇 关键修复保留
+      output_path: datasheet.pdf
       headless_chrome_options:
         args:
           - --no-sandbox
           - --disable-gpu
           - --disable-dev-shm-usage
-      
       render_js: false
-      locale: zh_CN                    # 👈 PDF 内部文字设为中文
-  
-  - encryptcontent: # 核心配置
-      title: "文档受保护" # 输入密码框的标题
-      search_index: false # 禁止被搜索索引（这很重要！）
-      # 下面是全站加密配置，如果你只想加密部分页面，把这行删掉
-      global_password: "smartnvy2026" 
+      locale: zh_CN
+  - encryptcontent:
+      title: "文档受保护"
+      search_index: false
+      global_password: "smartnvy2026"
       decryption_failure_message: "密码错误，请重试！"
       placeholder: "请输入访问密码..."
-      button_text: "解锁文档"  
+      button_text: "解锁文档"
