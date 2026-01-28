@@ -1,11 +1,11 @@
 # mkdocs_en.yml
 site_name: Polestar Chip Docs (English)
-docs_dir: docs/en/                     # 👈 关键：指向英文目录
+docs_dir: docs/en/
 site_url: https://polestar-docs.readthedocs.io/en/latest/
 
 theme:
   name: material
-  language: en                         # 👈 网页界面设为英文 (Search, Next, Previous)
+  language: en
 
 extra:
   alternate:
@@ -17,29 +17,28 @@ extra:
       lang: zh
 
 nav:
-  - Home: index.md                     # 👈 菜单名必须改成英文！
-  - Hardware Guide: hardware/gpio.md   # (示例路径)
+  - Home: index.md
+  - Hardware Guide: hardware/gpio.md
 
 plugins:
   - search
-  - with-pdf:
-      author: Sukiwei
-      copyright: Polestar Chip
-      output_path: datasheet-en.pdf    # 👈 建议改名，避免下载后和中文版混淆
-      
-      # 👇 这些技术参数必须和中文版完全一致
-      headless_chrome_options:
-        args:
-          - --no-sandbox
-          - --disable-gpu
-          - --disable-dev-shm-usage
-      
-      render_js: false
-      locale: en_US                    # 👈 PDF 内部文字设为英文
-   - encryptcontent:
-      title: "Protected Documentation"           # 对应：文档受保护
-      search_index: "encrypted"                  # 必须是 encrypted
-      global_password: "smartnvy2026"            # 密码不变
+  # ⚠️ PDF插件会导致加密失败，已暂时注释掉，确保本次构建成功
+  # - with-pdf:
+  #     author: Sukiwei
+  #     copyright: Polestar Chip
+  #     output_path: datasheet-en.pdf
+  #     headless_chrome_options:
+  #       args:
+  #         - --no-sandbox
+  #         - --disable-gpu
+  #         - --disable-dev-shm-usage
+  #     render_js: false
+  #     locale: en_US
+
+  - encryptcontent:
+      title: "Protected Documentation"
+      search_index: "encrypted"
+      global_password: "smartnvy2026"
       decryption_failure_message: "Incorrect password, please try again!"
-      placeholder: "Enter password..."           # 对应：请输入访问密码
-      button_text: "Unlock"                      # 对应：解锁文档
+      placeholder: "Enter password..."
+      button_text: "Unlock"
