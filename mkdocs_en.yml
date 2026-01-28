@@ -36,3 +36,10 @@ plugins:
       
       render_js: false
       locale: en_US                    # 👈 PDF 内部文字设为英文
+   - encryptcontent:
+      title: "Protected Documentation"           # 对应：文档受保护
+      search_index: "encrypted"                  # 必须是 encrypted
+      global_password: "smartnvy2026"            # 密码不变
+      decryption_failure_message: "Incorrect password, please try again!"
+      placeholder: "Enter password..."           # 对应：请输入访问密码
+      button_text: "Unlock"                      # 对应：解锁文档
