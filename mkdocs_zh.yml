@@ -1,6 +1,6 @@
 site_name: Polestar Chip Docs (中文)
 docs_dir: docs/zh/
-site_url: https://polestar-docs.readthedocs.io/zh/latest/
+site_url: https://polestar-chip-docs.readthedocs.io/zh/latest/
 
 theme:
   name: material
@@ -9,10 +9,10 @@ theme:
 extra:
   alternate:
     - name: 中文
-      link: https://polestar-docs.readthedocs.io/zh/latest/ 
+      link: https://polestar-chip-docs.readthedocs.io/zh/latest/ 
       lang: zh
     - name: English
-      link: https://polestar-docs.readthedocs.io/en/latest/ 
+      link: https://polestar-chip-docs.readthedocs.io/en/latest/ 
       lang: en
 
 nav:

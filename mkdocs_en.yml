@@ -1,7 +1,7 @@
 # mkdocs_en.yml
 site_name: Polestar Chip Docs (English)
 docs_dir: docs/en/
-site_url: https://polestar-docs.readthedocs.io/en/latest/
+site_url: https://polestar-chip-docs.readthedocs.io/en/latest/
 
 theme:
   name: material
@@ -10,10 +10,10 @@ theme:
 extra:
   alternate:
     - name: English
-      link: https://polestar-docs.readthedocs.io/en/latest/ 
+      link: https://polestar-chip-docs.readthedocs.io/en/latest/ 
       lang: en
     - name: 中文
-      link: https://polestar-docs.readthedocs.io/zh/latest/ 
+      link: https://polestar-chip-docs.readthedocs.io/zh/latest/ 
       lang: zh
 
 nav:
