@@ -10,10 +10,10 @@ theme:
 extra:
   alternate:
     - name: English
-      link: /en/latest/
+      link: https://polestar-docs.readthedocs.io/en/latest/ 
       lang: en
     - name: 中文
-      link: /zh/latest/
+      link: https://polestar-docs.readthedocs.io/zh/latest/ 
       lang: zh
 
 nav:
